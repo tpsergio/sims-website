@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The website for Surge Information Management Support (SIMS).">
+
+    <title>SIMS</title>
+
+
+    <link href="/assets/styles/vendor.min.css" rel="stylesheet">
+    <link href="/assets/styles/custom.css" rel="stylesheet">
+    
+    
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+              <a id="menu-toggle-sidebar" href="#" class="btn btn-secondary"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="/">SIMS</a>
+                </li>
+                <li>
+                    <a href="/resources">Resources</a>
+                </li>
+                <li>
+                    <a href="/toolkit">Toolkit</a>
+                </li>
+                <li>
+                    <a href="/dashboard">Dashboard</a>
+                </li>
+                <li>
+                    <a href="/network">Network</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <!--  keep all page content within the #page-content-wrapper -->
+        <div id="page-content-wrapper"> 
+            
+              <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i class="fa fa-bars"></i></a>
+              
+              <section id="network">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 text-center">
+        <h2>Who is SIMS?</h2>
+        <p> SIMS specialists include staff and volunteers from national societies and the IFRC.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10 text-center">
+        
+          <div class="person-box">
+            
+            <a href="/network/dan-joseph/">
+              <img width="100px" class="border rounded-circle" src="/assets/img/network/dan-joseph.jpg">
+            </a>
+            
+          </div>
+        
+          <div class="person-box">
+            <img width="100px" class="border rounded-circle" src="/assets/img/network/null.png">
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap core JavaScript -->
+<script src="/assets/scripts/jquery.min.js"></script>
+<script src="/assets/scripts/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-sidebar").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+
+// Scrolls to the selected menu item on the page
+$(function () {
+    $('a[href*=\\#]:not([href=\\#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+              
+
+        </div> <!-- /#page-content-wrapper -->
+
+    </div> <!-- /#wrapper -->
+
+    
+    
+
+
+</body>
+
+</html>
